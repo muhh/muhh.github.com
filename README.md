@@ -1,2 +1,2 @@
-because i can.
-[http://muhh.github.com](muhh.github.com)
+because i can.  
+[muhh.github.com](http://muhh.github.com)
