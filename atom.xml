@@ -5,10 +5,10 @@ layout: nil
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>bestform labs</title>
-  <link href="http:/muhh.github.com/atom.xml" rel="self"/>
-  <link href="http://muhh.github.com/"/>
+  <link href="http:/byzero.de/atom.xml" rel="self"/>
+  <link href="http://byzero.de/"/>
   <updated>{{ site.time | date_to_xmlschema }}</updated>
-  <id>http://muhh.github.com/</id>
+  <id>http://byzero.de/</id>
   <author>
     <name>Markus Heurung</name>
     <email>muhh@byzero.de</email>
@@ -17,7 +17,7 @@ layout: nil
   {% for post in site.posts %}
   <entry>
       <title>{{ post.title }}</title>
-      <link href="http://muhh.github.com{{ post.url }}"/>
+      <link href="http://byzero.de{{ post.url }}"/>
       <updated>{{ post.date | date_to_xmlschema }}</updated>
       <id>id:{{ post.id }}</id>
       <content type="html">{{ post.content | xml_escape }}</content>

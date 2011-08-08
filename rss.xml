@@ -6,7 +6,7 @@ layout: nil
 <channel>
 	<title>byzero.de</title>
 	<link>http://byzero.de</link>
-	<description>“SO YOU WANT TO BE A PIRATE, EH? YOU LOOK MORE LIKE A FLOORING INSPECTOR.”</description>
+	<description>“so you want to be a pirate, eh? you look more like a flooring inspector.”</description>
 	<language>de-de</language>
 	<copyright>Markus Heurung</copyright>
 	<pubdate>{{ site.time | date_to_xmlschema }}</pubdate>
@@ -14,7 +14,7 @@ layout: nil
 	{% for post in site.posts %}
 	<item>
 		<title>{{ post.title }}</title>
-		<link>http://muhh.github.com{{ post.url }}</link>
+		<link>http://byzero.de{{ post.url }}</link>
 		<author>Markus Heurung, muhh@byzero.de</author>
 		<pubdate>{{ post.date | date_to_xmlschema }}</pubdate>
 		<guid>id:{{ post.id }}</guid>
