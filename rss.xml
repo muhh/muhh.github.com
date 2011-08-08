@@ -1,0 +1,24 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+	<title>byzero.de</title>
+	<link>http://byzero.de</link>
+	<description>“SO YOU WANT TO BE A PIRATE, EH? YOU LOOK MORE LIKE A FLOORING INSPECTOR.”</description>
+	<language>de-de</language>
+	<copyright>Markus Heurung</copyright>
+	<pubdate>{{ site.time | date_to_xmlschema }}</pubdate>
+	
+	{% for post in site.posts %}
+	<item>
+		<title>{{ post.title }}</title>
+		<link>http://muhh.github.com{{ post.url }}</link>
+		<author>Markus Heurung, muhh@byzero.de</author>
+		<pubdate>{{ post.date | date_to_xmlschema }}</pubdate>
+		<guid>id:{{ post.id }}</guid>
+		<description>{{ post.content | xml_escape }}</description>
+	</item>
+	{% endfor %}
+</rss>
