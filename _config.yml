@@ -1,0 +1,4 @@
+markdown: rdiscount
+lsi: true
+permalink: /:year/:month/:day/:title
+exclude: newsroom
