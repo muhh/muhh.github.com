@@ -7,4 +7,9 @@ layout: base
         <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
         <p class="meta">posted on {{ page.date | date_to_long_string }}.</p>
             {{ content }}
+						<ul class="tags">Tags:
+							{% for tag in page.tags %}
+								<li><span>{{ tag }}</span></li>
+							{% endfor %}
+						</ul>
         </div>
