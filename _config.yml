@@ -3,4 +3,3 @@ lsi: true
 permalink: /:year/:month/:day/:title
 exclude: newsroom
 url: http://byzero.de
-paginate: 20
