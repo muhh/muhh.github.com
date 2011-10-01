@@ -4,7 +4,17 @@ layout: base
 
         <div class="post">
         
-        <h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
+        <h1><a href="{{ page.url }}">{{ page.title }}</a></h1
+		<div class="flattr">
+			<a class="FlattrButton" style="display:none;"
+			    title="{{ page.title }}"
+			    lang="de_DE"
+			    rev="flattr;uid:muhh;category:rest;button:compact;"
+			    href="{{ site.url }}{{ page.url }}">
+				{{ page.title }} 
+				( {{ site.url }}{{ page.url }} )
+			</a>
+		</div>
         <p class="meta">posted on {{ page.date | date_to_long_string }}.</p>
             {{ content }}
 						<ul class="tags">Tags:

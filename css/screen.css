@@ -73,7 +73,7 @@ table {
 /*****************************************************************************/
 
 body {
-  background-image: url(../img/handmadepaper.png);
+  /* background-image: url(../img/handmadepaper.png); */
 }
 
 ul.posts {
@@ -210,6 +210,9 @@ ul.posts {
     background-color: #333;
   }
 
+  .post .flattr {
+		float: right;
+}
 #related {
   margin-top: 2em;
 }
