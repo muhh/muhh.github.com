@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: mein eigenes Twitter
+created: 1215214941
+---
+	<p>Vorgestern haben ich kurz die brandheisse Software <a href="http://laconi.ca">laconi.ca</a> <a href="http://byzero.de/blog/2008/07/02/wird_der_wal_bald_freigelassen">kurz vorgestellt</a> und gerade eben habe ich eine eigene Installation unter <a href="http://mb.byzero.de">mb.byzero.de</a> gestartet. Mein Account dort ist natürlich <a href="http://mb.byzero.de/muhh">muhh</a>.</p>
+
+	<p>Ein <a href="http://decafbad.com/blog/2008/07/03/getting-laconica-up-and-running">Howto</a> hat mir dabei geholfen, allerdings trat das Problem auf, dass auf meinem Server ein Debian Etch läuft. Dort gibt es nämlich nur <span class="caps">PHP</span> in der Version 5.2.0, aber laconi.ca braucht die Funktion <a href="http://de.php.net/sys_get_temp_dir">sys_get_temp_dir</a>, die es aber erst ab <span class="caps">PHP</span> 5.2.1 gibt. In der Doku ist aber ein kleiner Hack vorhanden, der sich auch ganz hässlich in laconi.ca nutzen lässt, ohne dass man gleich die ganze Distribution wechseln müsste&#8230;</p>
+
+	<p>Ich habe eine neue Datei sysgettmpdir.php angelegt, in der der Code aus <a href="http://de.php.net/manual/de/function.sys-get-temp-dir.php#71332">diesem Tip aus der PHP-Doku</a> steht. In der config.php von laconi.ca kann man dann ein einfaches <code>require_once(&#39;sysgettmpdir.php&#39;);</code> einfügen und das Problem ist weg.</p>
+
+	<p>Dann kann man auch User auf anderen laconi.ca Instanzen, wie <a href="http://identi.ca">identi.ca</a> &#8220;subscriben&#8221;, so dass Nachrichten auch serverübergreifend ausgetauscht werden. Das funktioniert aber bisher nur etwas einseitig&#8230;</p>
+

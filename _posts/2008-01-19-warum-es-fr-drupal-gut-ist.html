@@ -1,0 +1,30 @@
+--- 
+layout: post
+title: "warum es f\xC3\xBCr drupal gut ist"
+created: 1200781207
+---
+	<p>... mehrere Datenbanken zu unterstützen, kann man wunderbar in der <a href="http://drupal.org">Drupal</a> <a href="http://lists.drupal.org/listinfo/development">Entwicklermailingliste</a> mitverfolgen. Da gibt es Leute, die argumentieren, dass der Support für <a href="http://www.postgres.de/">Postgres</a> zugunsten von <a href="http://www.mysql.de">MySQL</a> aufgegeben werden soll.<br />
+Es gibt aber <a href="http://lists.drupal.org/pipermail/development/2008-January/028327.html">sehr gute Argumente</a> , die gegen eine solche Entscheidung sprechen.</p>
+
+	<blockquote>
+		<p>Forcing ourselves to think generically about databases forces us to make certain design decisions that, in the long run, are good for the health of the code, even if only 5 people use Something other than MySQL.</p>
+	</blockquote>
+
+	<p><a href="http://lists.drupal.org/pipermail/development/2008-January/028464.html">In einer weiteren Mail</a> wird das ganze anhand eines Auszugs eines Buches<sup class="footnote"><a href="#fn14948986394c464232b433e">1</a></sup> über Microsofts erstes &#8220;Betriebssytemprojekt&#8221; Windows NT<sup class="footnote"><a href="#fn14743151374c464232b4723">2</a></sup> in den 90&#8217;ern beschrieben.</p>
+
+	<blockquote>
+		<p>Since the start of the project, Cutler had emphasized the importance of creating two versions of NT in tandem. This kept code writers &#8220;honest&#8221; by forcing them to write their code in portable languages, rather than lapsing in to chip-specific assembly code.<br />
+Proudly dubbing himself Mr. Mips, Cutler was more enthusiastic about the version of NT designed for the Mips chip. This was… because… Cutler feared that the Mips version would receive short shrift unless someone of his stature defended it. It was all too easy to tailor NT to Intel&#8217;s X86 chips, giving the program greater performance but at the cost of portability.<br />
+This was the path advocated by Muglia, who was convince that Intel chips would power virtually every PC for years to come. &#8220;Screw Mips,&#8221; he said. The team should &#8220;focus on the Intel version and let Mips drag behind.&#8221;<br />
+To Cutler, Muglia&#8217;s position was stupid. If the team let the Mips version of NT lag behind, within months there would be no Mips version. Without a constant effort to keep the two versions in line, they would drift hopelessly apart. Day to day Cultler&#8217;s top propriety was to keep the two versions on an equal footing. As one code writer put it. &#8220;That guarantees you portability and verifies your design.&#8221;</p>
+	</blockquote>
+
+	<p>Ich wette ja drauf, dass der Datenbankzugriff so weit abstrahiert wird, dass Modulschreiber garnicht mehr daran denken, direkt für eine Datenbank zu schreiben. Und dann wird sich die Unterstützung für viele &#8220;Exotendanken<sup class="footnote"><a href="#fn1541484894c464232b56d1">3</a></sup>&#8220;, wie zB. <a href="http://de.wikipedia.org/wiki/sqlite" title="reference on sqlite" target="_blank">sqlite</a>, <a href="http://de.wikipedia.org/wiki/http://de.wikipedia.org/wiki/Firebird_%28Datenbank%29" title="reference on Firebird" target="_blank">Firebird</a> und <a href="http://de.wikipedia.org/wiki/http://de.wikipedia.org/wiki/Oracle_%28Datenbanksystem%29" title="reference on Oracle" target="_blank">Oracle</a>, verbessern.</p>
+
+	<p id="fn14948986394c464232b433e" class="footnote"><sup>1</sup> Show-Stopper!: The Breakneck Race to Create Windows NT and the Next Generation at Microsoft <a href="http://www.amazon.co.uk/Show-Stopper-Breakneck-Windows-Generation-Microsoft/dp/0029356717/">Amazomlink</a></p>
+
+	<p id="fn14743151374c464232b4723" class="footnote"><sup>2</sup> Windows NT: das Betriebssystem von Microsoft, aus dem Windows 2000, XP und Vista entstanden sind. Das bis 2000 auch ein halbwegs gutes Softwaredesign gehabt haben soll.</p>
+
+	<p id="fn1541484894c464232b56d1" class="footnote"><sup>3</sup> wenn man bedenkt, dass <a href="http://de.wikipedia.org/wiki/MySQL" title="reference on MySQL" target="_blank">MySQL</a> die Übermacht im Web ist.[4]</p>
+
+	<p id="fn4" class="footnote"><sup>4</sup> Fußnoten mit dem <a href="http://drupal.org/project/textile">Textile Module</a> und <a href="http://de.wikipedia.org/wiki/Wikipedia" title="reference on Wikipedia" target="_blank">Wikipedia</a> mit dem <a href="http://drupal.org/project/interwiki">Interwiki Modul</a> machen richtig Spaß ;)</p>

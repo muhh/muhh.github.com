@@ -1,0 +1,24 @@
+--- 
+layout: post
+title: "mein eigenes Twitter #2"
+created: 1215462436
+---
+	<p>Auf meinem <a href="http://mb.byzero.de">µblog</a> gibt es jetzt auch Replies, nachdem <a href="http://identi.ca/evan">evan</a> heute morgen <a href="http://identi.ca">identi.ca</a> aktualisiert hatte. Damit kann man leicht sehen, wer einem auf eigene Mininachrichten geantwortet hat und kann so Konversationen leichter verfolgen. Es war das am meisten verlangte Feature, was auch noch viele Twitteruser zu ungehaltenem Gemoser veranlasst hat.</p>
+
+	<p>Eine eigene Installation bekommt man relativ einfach auf einen aktuellen Stand, indem man nach einem <code>darcs pull</code> die neue <code>htaccess.sample</code> über die existierende <code>.htaccess</code> kopiert und mit folgendem die neue Tabelle in der Datenbank erzeugt:</p>
+
+	<p><pre><br />
+create table reply (
+    notice_id integer not null comment &#8216;notice that is the reply&#8217; references notice (id),
+    profile_id integer not null comment &#8216;profile replied to&#8217; references profile (id),
+    replied_id integer comment &#8216;notice replied to (a guess)&#8217; references notice (id),
+    modified timestamp not null comment &#8216;date this record was modified&#8217;,
+    constraint primary key (notice_id, profile_id),
+    index reply_notice_id_idx (notice_id),
+    index reply_profile_id_idx (profile_id),
+    index reply_replied_id_idx (replied_id)</p>
+
+	<p>) ENGINE=InnoDB;<br />
+</pre></p>
+
+	<p>Mit einem beherztem <code>php fixup_replies.php</code> werden dann noch fehlende Replies nachmontiert und dem freien, funktionierendem Schnatterspass steht nichts mehr im Weg.</p>

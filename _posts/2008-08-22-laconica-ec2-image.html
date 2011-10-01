@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: laconica ec2 image
+created: 1219392385
+---
+
+    <p><a href="http://jayridgeway.com/post/46565655/laconica-ec2-image">runciblejay</a>:</p>
+
+<blockquote>
+<p>For your enjoyment. A laconica ec2 image based on debian etch.</p>
+<p>ami: ami-f3ee0a9a<br />manifest: betaworks-laconica/2008-08-20.manifest.xml</p>
+<p>To get up and running:</p>
+<ol>
+<li>Install <a href="http://developer.amazonwebservices.com/connect/entry.jspa?externalID=609">elastic fox</a> for firefox. Add your aws credentials.<br />
+</li>
+<li>Click KeyPair tab and create a new laconica pem. Save it in $HOME/ec2-keys.<br />
+</li>
+<li>Click SecurityGroups tab, highlight laconica and open the following ports to 0.0.0.0/0: 80, 5222, 5223, 5269. Open yourip/32 to all ports.</li>
+<li>Click AMIs and Instances tab and search for laconica. Highlight the instances named betaworks-laconica/2008-08-20.manifest.xml and start an instance.</li>
+<li>Once the instance has started, right click on it and select ssh to this instance. This will hopefully open a terminal to the instance.<br />
+</li>
+<li>From your home directory (/root) run ./config.sh. It will ask for your hostname and some other info used to generate a certificate.</li>
+<li>Update your hostname’s dns to point to the ec2 public hostname.</li>
+</ol>
+<p>You should now have an operational laconica instance using the default template. The webserver is apache2. Jabber provided by ejabberd and electronic mail courtesy of sendmail. There is also a script provided that will back up your database to s3.</p>
+<p>Viva la Revolucion!</p>
+</blockquote>
+  

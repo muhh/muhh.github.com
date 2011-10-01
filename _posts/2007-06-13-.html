@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: !binary |
+  w6TDtsOf4oKsw4TDlsOAw6LDgg==
+
+created: 1181690997
+---
+<p>so, die Umlaute sollten wieder funktionieren.</p>
+
+<p>Auslöser war ein Systemupdate, das auch die Datenbank <a href="http://de.wikipedia.org/wiki/MySQL" title="reference on MySQL" target="_blank">MySQL</a> auf eine neue Version gehievt hat, der es nicht mehr egal war, in welchem <a href="http://de.wikipedia.org/wiki/Zeichensatz" title="reference on Zeichensatz" target="_blank">Zeichensatz</a> die Daten gespeichert sind.<br />
+Und wenn das System meint, etwas Schwedisches erwarten zu müssen, aber was viel Internationaleres bekommt, dann kommt so ein Gewurschtel raus.</p>
+
+<p>Aber ich habe einige interessante und hilfreiche Hinweise bekommen, um das Problem zu verstehen. Sehr empfehlenswert sind Kris Köhntopps Artikel <a href="http://blog.koehntopp.de/archives/1360-Zeichensatzaerger.html">Zeichensatzärger</a> und <a href="http://blog.koehntopp.de/archives/1424-MySQL-Zeichensatz-Grundlagen.html">MySQL Zeichensatz Grundlagen</a>. Letztendlich geholfen hat mir dann aber <a href="http://drupal.org/node/84214#comment-154188">dieser Kommentar</a> im <a href="http://drupal.org/forum">Drupal Forum</a>.</p>
+
+<p>Kurz zusammengefasst:</p>
+
+<ul>
+<li>Datenbank auslesen und in einem &#8220;Dump&#8221; speichern<br />
+<code>mysqldump -p --default-character-set=latin1 --skip-set-charset bz &gt; bz.sql</code></li>
+<li>Alle &#8220;latin1&#8221; durch &#8220;utf8&#8221; ersetzen<br />
+<code>replace latin1 utf8 -- bz.sql</code></li>
+<li>Den überarbeiteten Dump in eine neue Datenbank schreiben
+<code>CREATE DATABASE byzerode CHARACTER SET utf8 COLLATE utf8_general_ci;</code><br />
+<code>mysql -p --default-character-set=utf8 byzerode &lt; bz.sql</code></li>
+<li>Drupal die neue Datenbank benutzen lassen.</li>
+<li>Freuen :-)</li>
+</ul>

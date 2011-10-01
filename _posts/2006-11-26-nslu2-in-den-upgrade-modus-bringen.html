@@ -1,0 +1,19 @@
+--- 
+layout: post
+title: NSLU2 in den Upgrade Modus bringen
+created: 1164579885
+---
+<p>weil ich&#8217;s immer wieder vergesse und dann immer wieder nach dem <a href="http://wiki.nslu2-info.de/pmwiki.php/HowTo/OpenDebianSlug">Opendebian Howto für die NSLU2</a> suchen muss:</p>
+
+<ol>
+<li>NSLU2 abschalten</li>
+<li>Eventuell vorhandene Platten abstöpseln</li>
+<li>Reset-Button drücken und halten (Büroklammer durch das kleine Loch an der Rückseite)</li>
+<li>Power-Button drücken und loslassen</li>
+<li>Status LED beobachten</li>
+<li>Nach ca. 10 Sekunden wechselt das orange auf rot. Dann sofort den Reset-Button loslassen</li>
+<li>Die LED wechselt jetzt zwischen rot und grün, die NSLU2 ist im Upgrade Modus.</li>
+</ol>
+
+<p>dann kann man per ssh und mit einem einfachen &#8216;turnup disk /dev/sda1 -t ext3&#8217; auch der Kiste wieder klar machen, von welcher Platte es gefälligst zu booten hat.<br />
+Das &#8220;vergisst&#8221; es nämlich manchmal&#8230;</p>
