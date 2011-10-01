@@ -1,0 +1,87 @@
+/* Für TiddlyWiki Versionen 1.2.39
+   Eine Übersetzung für aktuelle TiddlyWiki Versionen gibt es unter
+   http://www.karadeniz.de/tiddlywiki/
+
+   Markus Heurung, 27. August 2006
+   markus@heure.de
+*/
+config.options.txtUserName = "DeinName";
+config.shadowTiddlers.SideBarOptions = "<<search>><<closeAll>><<permaview>><<saveChanges>><<slider chkSliderOptionsPanel OptionsPanel Einstellungen 'Ändern Sie die TiddlyWiki Einstellungen'>>";
+config.shadowTiddlers.OptionsPanel = "Diese [[Interfaceeinstellungen|InterfaceOptions]] um TiddlyWiki anzupassen, werden in Ihrem Browser gespeichert.\n\nIhr Benutzername, mit dem Sie ihre Änderungen signieren. Schreiben Sie ihn als ein WikiWord (z.B. KlausBlogs)\n\n<<option txtUserName>>\n<<option chkSaveBackups>> [[Backups speichern|SaveBackups]]\n<<option chkAutoSave>> [[Automatisch Speichern|AutoSave]]\n<<option chkGenerateAnRssFeed>> [[Erstelle einen RSS Feed|GenerateAnRssFeed]]\n<<option chkRegExpSearch>> [[Such mit RegExp|RegExpSearch]]\n<<option chkCaseSensitiveSearch>> [[Groß-/Kleinschreibung in Suche|CaseSensitiveSearch]]\n<<option chkAnimate>> [[Animationen nutzen|EnableAnimations]]\n\n[[Erweiterte Einstellungen|AdvancedOptions]]";
+config.shadowTiddlers.AdvancedOptions = "<<option chkOpenInNewWindow>> [[Öffne Links in neuem Fenster|OpenLinksInNewWindow]]\n<<option chkSaveEmptyTemplate>> [[Leeres Template speichern|SaveEmptyTemplate]]\n<<option chkToggleLinks>> Ein klick auf den Link zu einem schon geöffnetem Tiddler schließt diesen.\n^^(Übergehen Sie dies mit Strg)^^",
+config.shadowTiddlers.SideBarTabs = "<<tabs txtMainTab Timeline Timeline TabTimeline Tags 'Alle Tags' TabTags Mehr 'Weitere Listen' TabMore>>";
+config.shadowTiddlers.TabMore = "<<tabs txtMoreTab Alle 'Alle Tiddler' TabMoreAll Fehlende 'Fehlende Tiddler' TabMoreMissing Waisen 'Verwaiste Tiddler' TabMoreOrphans>>";
+config.messages.customConfigError = "Fehler in customConfig - %0";
+config.messages.savedSnapshotError = "Es sieht so aus, als wäre TiddlWiki nicht richtig gespeichert worden. Für Details besuchen Sie bitte http://www.tiddlywiki.com/#DownloadSoftware";
+config.messages.subtitleUnknown = "(unbekannt)";
+config.messages.undefinedTiddlerToolTip = "Der Tiddler '%0' existiert noch nicht";
+config.messages.externalLinkTooltip =  "Externer Link zu %0";
+config.messages.noTags = "Es gibt keine getaggten Tiddler";
+config.messages.notFileUrlError = "Sie müssen dieses TiddlyWiki erst in einer Datei speichern, bevor Sie die Änderungen speichern können";
+config.messages.cantSaveError = "Es ist mit diesem Browser nicht möglich zu speichern. Benutzen Sie Firefox, wenn Sie können.";
+config.messages.invalidFileError = "Die Datei '%0' scheint kein korrektes TiddlyWiki zu sein";
+config.messages.backupSaved = "Backup gespeichert: ";
+config.messages.backupFailed = "Speichern der Backup Datei fehlgeschlagen";
+config.messages.rssSaved = "RSS Feed gespeichert: ";
+config.messages.rssFailed = "Speichern des RSS Feeds fehlgeschlagen";
+config.messages.emptySaved = "Leeres Template gespeichert";
+config.messages.emptyFailed = "Speichern eines leeren Templates fehlgeschlagen";
+config.messages.mainSaved = "TiddlyWiki Datei gespeichert: ";
+config.messages.mainFailed = "Speichern der TiddlyWiki Datei fehlgeschlagen. Es ist möglich, dass Ihre Änderungen nicht gespeichert wurden.";
+config.messages.macroError = "Fehler beim Ausführen des Makros '%0'";
+overwriteWarning: "Der Tiddler '%0' existiert schon. Wählen Sie OK um ihn zu überschreiben";
+config.messages.unsavedChangesWarning = "WARNUNG! Es gibt nicht gesicherte Änderungen in TiddlyWiki\n\nWählen Sie OK um zu speichern\nWählen sie ABBRUCH um die Änderungen zu verwerfen",
+config.messages.dates.months =  ["Januar", "Februar", "März", "April", "Mai", "Juni", "Juli", "August", "September", "Oktober", "November", "Dezember"];
+config.messages.dates.days =  ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
+
+config.views.wikified.tag.labelNoTags = "keine Tags";
+config.views.wikified.tag.labelTags = "Tags: ";
+config.views.wikified.tag.tooltip = "Tiddlers die mit '%0' getagged sind anzeigen";
+config.views.wikified.tag.openAllText = "Alle Tiddler, die mit '%0' getagged sind öffnen";
+config.views.wikified.tag.openAllTooltip = "Alle diese Tiddler öffnen";
+config.views.wikified.tag.popupNone = "Keine weiteren Tiddler sind mit '%0' getagged";
+config.views.wikified.toolbarClose.text = "Schließen";
+config.views.wikified.toolbarClose.tooltip = "Diesen Tiddler schließen";
+config.views.wikified.toolbarEdit.text = "Ändern";
+config.views.wikified.toolbarEdit.tooltip = "Diesen Tiddler ändern";
+config.views.wikified.toolbarPermalink.text = "Permalink";
+config.views.wikified.toolbarPermalink.tooltip = "Permalink für diesen Tiddler";
+config.views.wikified.toolbarReferences.text = "Referenzen";
+config.views.wikified.toolbarReferences.tooltip = "Tiddler anzeigen, die auf diesen verlinken";
+config.views.wikified.toolbarReferences.popupNone = "Keine Referenzen";
+config.views.wikified.defaultText = "Der Tiddler '%0' existiert noch nicht. Doppel-Klick um ihn zu erstellen."
+config.views.editor.tagPrompt = "Geben Sie die Tags durch Leerstellen getrennt ein, [[benutzen Sie doppelte eckige Klammern]] falls nötig, oder wählen Sie vorhandene";
+config.views.editor.tagChooser.text = "Tags";
+config.views.editor.tagChooser.tooltip = "Wählen Sie vorhandene Tags aus, um sie hinzu zufügen";
+config.views.editor.tagChooser.popupNone = "Keine Tags definiert";
+config.views.editor.tagChooser.tagTooltip = "Tag '%0' hinzu fügen";
+config.views.editor.toolbarDone.text = "Fertig";
+config.views.editor.toolbarDone.tooltip = "Änderungen in diesem Tiddler speichern";
+config.views.editor.toolbarCancel.text = "Abbruch";
+config.views.editor.toolbarCancel.tooltip = "Änderungen in diesem Tiddler verwerfen";
+config.views.editor.toolbarDelete.text = "Löschen";
+config.views.editor.toolbarDelete.tooltip = "Diesen Tiddler löschen";
+config.views.editor.defaultText = "Geben Sie den Text für '%0' ein";
+
+config.macros.search.label = "Suchen";
+config.macros.search.prompt = "Dieses TiddlyWiki durchsuchen";
+config.macros.search.successMsg = "%0 Tiddler gefunden, die %1 enthalten";
+config.macros.search.failureMsg = "Keine Tiddler gefunden, die %0 enthalten";
+config.macros.allTags.tooltip = "Tiddler, die mit '%0' getagged sind anzeigen";
+config.macros.allTags.noTags = "Keine Tiddler sind getagged";
+config.macros.list.all.prompt = "Alle Tiddler in alphabetischer Reihenfolge";
+config.macros.list.missing.prompt = "Tiddler auf die verwiesen wird, die aber nicht exisitieren";
+config.macros.list.orphans.prompt = "Tiddler auf die nicht verwiesen wird";
+config.macros.timeline.dateFormat = "DD.MMM YYYY";
+
+config.macros.closeAll.label = "Alle schließen";
+config.macros.closeAll.prompt = "Alle angezeigten Tiddler schließen (außer denen, die gerade geändert werden)";
+config.macros.permaview.label =  "Permaview";
+config.macros.permaview.prompt = "Link auf den URL, mit dem auf alle gerade geöffneten Tiddler verwiesen werden kann";
+config.macros.saveChanges.label = "Änderungen speichern";
+config.macros.saveChanges.prompt = "Speichern Sie alle Änderungen, um eine neues TiddlyWiki zu erstellen";
+config.macros.newTiddler.label = "neuer Tiddler";
+config.macros.newTiddler.prompt = "Erstelle einen neuen Tiddler";
+config.macros.newJournal.label = "neuer Journaleintrag";
+config.macros.newJournal.prompt = "Erstelle einen neuen Tiddler aus dem aktuellen Tag und Zeit";
+
