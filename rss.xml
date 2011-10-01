@@ -11,7 +11,7 @@ layout: nil
 	<copyright>Markus Heurung</copyright>
 	<pubdate>{{ site.time | date_to_xmlschema }}</pubdate>
 	
-	{% for post in site.posts %}
+	{% for post in site.posts limit:50 %}
 	<item>
 		<title>{{ post.title }}</title>
 		<link>http://byzero.de{{ post.url }}</link>

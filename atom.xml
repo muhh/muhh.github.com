@@ -14,7 +14,7 @@ layout: nil
     <email>muhh@byzero.de</email>
   </author>
 
-  {% for post in site.posts %}
+  {% for post in site.posts limit:50 %}
   <entry>
       <title>{{ post.title }}</title>
       <link href="http://byzero.de{{ post.url }}"/>
