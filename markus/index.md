@@ -21,7 +21,7 @@ categories:
   <span class="tel"><span class="type">mobile</span>: <span class="value">+49-179-1025659</span> (o2)</span>
 </p>
 <p>
-email: <a href="mailto:kontakt@markusheurung.de" class="email">kontakt@heurung.it</a><br />
+email: <a href="mailto:kontakt@markusheurung.de" class="email">kontakt@markusheurung.de</a><br />
 skype: <a href="skype:markus.heurung" class="url">markus.heurung</a><br />
 jabber: <a href="xmpp:markus.heurung@gmail.com" class="url">markus.heurung@gmail.com</a>
 </p>
