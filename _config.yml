@@ -1,5 +1,5 @@
 markdown: rdiscount
-lsi: true
+lsi: false
 permalink: /:year/:month/:day/:title
 exclude: newsroom
 url: http://byzero.de
