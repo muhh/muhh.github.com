@@ -21,8 +21,19 @@ categories:
   <span class="tel"><span class="type">mobile</span>: <span class="value">+49-179-1025659</span> (telekom)</span>
 </p>
 <p>
+  <a href="http://byzero.de" class="url symbol" rel="me" title="my blog">v</a>
+  <a href="http://twitter.com/muhh" class="url symbol" rel="me" title="Markus Heurung at twitter">t</a>
+  <a href="https://plus.google.com/100432708315665332485" class="url symbol" rel="me" title="Markus Heurung at Google+">g</a>
+  <a href="http://facebook.com/markusheurung" class="url symbol" rel="me" title="Markus Heurung at facebook">f</a>
+  <a href="skype:markus.heurung" class="url symbol">s</a>
+  <a href="http://identi.ca/muhh" class="url symbol" rel="me" title="Markus Heurung at identi.ca">,</a>
+  <a href="http://blogulus.de" class="url symbol" rel="me" "my (abandonded) blog about microblogging">v</a>
+  <a href="https://xing.com/profile/Markus_Heurung" class="url symbol" rel="me" title="Markus Heurung at Xing">,</a>
+  <a href="http://de.linkedin.com/in/markusheurung" class="url symbol" rel="me" title="Markus Heurung at LinkedIn">l</a>
+  <a href="http://github.com/muhh" class="url symbol" rel="me" title="Markus Heurung at github">,</a>
+</p>
+<p>
 email: <a href="mailto:kontakt@markusheurung.de" class="email">kontakt@markusheurung.de</a><br />
-skype: <a href="skype:markus.heurung" class="url">markus.heurung</a><br />
 jabber: <a href="xmpp:markus.heurung@gmail.com" class="url">markus.heurung@gmail.com</a>
 </p>
 <p>
@@ -30,17 +41,3 @@ jabber: <a href="xmpp:markus.heurung@gmail.com" class="url">markus.heurung@gmail
 <pre class="fingerprint">Fingerprint: 146D9428 C0FD6CF1 344C0B77 8F4A94C1 FD4F13C9</pre>
 </p>
 </div>
-
-<h2>on the web</h2>
-
-<dl>
-<dt>blog</dt><dd><a href="http://byzero.de" class="url" rel="me">byzero.de</a></dd>
-<dt>microblog</dt><dd><a href="http://identi.ca/muhh" class="url" rel="me">identi.ca/muhh</a></dd>
-<dt>twitter</dt><dd><a href="http://twitter.com/muhh" class="url" rel="me">muhh</a></dd>
-<dt>google+</dt><dd><a href="https://plus.google.com/100432708315665332485" class="url" rel="me">Markus Heurung at Google+</a></dd>
-<dt>facebook</dt><dd><a href="http://facebook.com/markusheurung" class="url" rel="me">facebook.com/markusheurung</a></dd>
-<dt>themenblog (old!)</dt><dd><a href="http://blogulus.de" class="url" rel="me">blogulus</a></dd>
-<dt>xing</dt><dd><a href="https://xing.com/profile/Markus_Heurung" class="url" rel="me">Markus Heurung at Xing</a></dd>
-<dt>linkedin</dt><dd><a href="http://de.linkedin.com/in/markusheurung" class="url" rel="me">Markus Heurung at LinkedIn</a></dd>
-<dt>github</dt><dd><a href="http://github.com/muhh" class="url" rel="me">Markus Heurung at github</a></dd>
-</dl>
