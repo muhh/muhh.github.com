@@ -1,0 +1,13 @@
+---
+layout: base
+title: Archive
+---
+<article id="index">
+  <h2>{{ page.title }}</h2>
+  
+    <ul class="posts">
+      {% for post in site.posts %}
+        {% include item.html %}
+      {% endfor %}
+    </ul>
+</article>
