@@ -3,22 +3,25 @@ layout: nil
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
-<channel>
-	<title>byzero.de</title>
-	<link>http://byzero.de</link>
-	<description>“so you want to be a pirate, eh? you look more like a flooring inspector.”</description>
-	<language>de-de</language>
-	<copyright>Markus Heurung</copyright>
-	<pubdate>{{ site.time | date_to_xmlschema }}</pubdate>
-	
-	{% for post in site.posts limit:50 %}
-	<item>
-		<title>{{ post.title }}</title>
-		<link>http://byzero.de{{ post.url }}</link>
-		<author>Markus Heurung, muhh@byzero.de</author>
-		<pubdate>{{ post.date | date_to_xmlschema }}</pubdate>
-		<guid>id:{{ post.id }}</guid>
-		<description>{{ post.content | xml_escape }}</description>
-	</item>
-	{% endfor %}
+  <channel>
+    <title>{{ site.meta.site_title }}</title>
+    <link>{{ site.meta.absolute_baseurl }}</link>
+    <description>{{ site.meta.site_subtitle }}</description>
+    <language>{{ site.meta.site_language }}</language>
+    <copyright>{{ site.meta.author.full_name}}</copyright>
+    <managingEditor>{{ site.meta.author.email }} ({{ site.meta.author.full_name}})</managingEditor>
+    <lastBuildDate>{{ site.time | date_to_xmlschema }}</lastBuildDate>
+    {% for post in site.posts limit:50 %}
+    
+    <item>
+      <title>{{ post.title }}</title>
+      <link>{{ site.meta.absolute_baseurl }}{{ post.url }}</link>
+      <author>{{ site.meta.author.email }} ({{ site.meta.author.full_name}})</author>
+      <pubdate>{{ post.date | date_to_xmlschema }}</pubdate>
+      <guid>{{ site.meta.absolute_baseurl }}{{ post.url }}</guid>
+      <description>{{ post.content | xml_escape }}</description>
+    </item>
+
+    {% endfor %}
+  </channel>
 </rss>

@@ -7,7 +7,7 @@ comments: false
 categories: 
 ---
 
-<div class="vcard">
+<article class="vcard">
 <img src="http://www.gravatar.com/avatar/f3a754cead3d10f1dba87e5fb3412e1d.png" alt="Markus Heurung Photo" class="photo" style="float: right;" />
 
 <p><address class="adr">
@@ -40,4 +40,4 @@ jabber: <a href="xmpp:markus.heurung@gmail.com" class="url">markus.heurung@gmail
 <a href="/files/MarkusHeurung_0xFD4F13C9_pub.asc">PGP/GPG-Schlüssel herunterladen</a><br />
 <pre class="fingerprint">Fingerprint: 146D9428 C0FD6CF1 344C0B77 8F4A94C1 FD4F13C9</pre>
 </p>
-</div>
+</article>

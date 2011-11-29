@@ -1,42 +1,59 @@
 ---
 layout: base
 ---
+<article class="post">
+  <h2 class="title">{{ page.title }}</h2>
+  <time title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}.</time>
+  {{ content }}
+  <ul class="tags">
+    {% for tag in page.tags %}
+    <li><a href="{{ site.baseurl }}/tag/{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
+    {% endfor %}
+  </ul>
+  <div class="flattr">
+    <a class="FlattrButton" style="display:none;" title="{{ page.title }}" lang="de_DE" rev="flattr;uid:muhh;category:rest;button:compact;" href="{{ site.url }}{{ page.url }}">{{ page.title }} ( {{ site.url }}{{ page.url }} )</a>
+  </div>
+</article>
 
-        <div class="post">
-        
-        <h1><a href="{{ page.url }}">{{ page.title }}</a></h1>
-        <p class="meta">posted on {{ page.date | date_to_long_string }}.</p>
-            {{ content }}
-			
-			<div class="flattr">
-				<a class="FlattrButton" style="display:none;"
-				    title="{{ page.title }}"
-				    lang="de_DE"
-				    rev="flattr;uid:muhh;category:rest;button:compact;"
-				    href="{{ site.url }}{{ page.url }}">
-					{{ page.title }} ( {{ site.url }}{{ page.url }} )
-				</a>
-			</div>
-			
-			<div id="related">
-				<h2>Related Posts</h2>
-				<ul class="posts">
-					{% for post in site.related_posts limit:3 %}
-					<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-					{% endfor %}
-				</ul>
-			</div>
-			
-			<div id="comments">
-				<h2>Comments</h2>
-				<!-- START: Livefyre Embed -->
-				<script type='text/javascript' src='http://www.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
-				<script type='text/javascript'>
-				    var fyre = LF({
-				        site_id: 290840,
-				        version: '1.0'
-				    });
-				</script>
-				<!-- END: Livefyre Embed -->
-			</div>
-        </div>
+<nav class="page-navigation">
+  <ul>
+    {% if page.previous.url %}
+    <li class="left">
+      <a href="{{ site.baseurl }}{{page.previous.url}}" accesskey="1" title="Previous Post: {{page.previous.title}}">&laquo; {{page.previous.title}}</a>
+    </li>
+    {% endif %}
+    {% if page.next.url %}
+    <li class="right">
+      <a href="{{ site.baseurl }}{{page.next.url}}" accesskey="2" title="next Post: {{page.next.title}}">{{page.next.title}} &raquo;</a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>
+
+{% if false %}
+<div id="related">
+<h3>Related Posts</h3>
+<ul class="posts">
+{% for post in site.related_posts limit:3 %}
+<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+{% endfor %}
+</ul>
+</div>
+{% endif %}
+
+{% if comments %}
+<section class="comments" id="comments">
+  <h3>Comments</h3>
+  <div id="lifefyre_thread">
+  <!-- START: Livefyre Embed -->
+  <script type='text/javascript' src='http://www.livefyre.com/wjs/v1.0/javascripts/livefyre_init.js'></script>
+  <script type='text/javascript'>
+    var fyre = LF({
+      site_id: 290840,
+      version: '1.0'
+    });
+    </script>
+    <!-- END: Livefyre Embed -->
+  </div>
+</section>
+{% endif %}

@@ -3,3 +3,13 @@ lsi: false
 permalink: /:year/:month/:day/:title
 exclude: newsroom
 url: http://byzero.de
+meta:
+  site_title: "byzero.de"
+  site_subtitle: "&quot;so you want to be a pirate, eh? you look more like a flooring inspector.&quot;"
+  site_language: "de_de"
+  absolute_baseurl: http://byzero.de
+  domain: byzero.de
+  author:
+    full_name: Markus Heurung
+    short_name: muhh
+    email: kontakt@markusheurung.de
