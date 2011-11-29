@@ -41,7 +41,8 @@ layout: base
 </div>
 {% endif %}
 
-{% if comments %}
+{% if comments_disabled %}
+{% else %}
 <section class="comments" id="comments">
   <h3>Comments</h3>
   <div id="lifefyre_thread">
