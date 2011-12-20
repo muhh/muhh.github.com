@@ -2,7 +2,7 @@
 layout: nil
 ---
 [
-{% for post in site.posts %}
+{% for item in site.posts %}
   {{ post.json }},
 {% endfor %}
 false

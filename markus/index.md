@@ -17,7 +17,7 @@ categories:
 </address>
 </p>
 <p>
-  <span class="tel"><span class="type">fon</span>: <span class="value">+49-821-5081740</span> (sipgate)</span><br />
+  <span class="tel"><span class="type">fon</span>: <span class="value">+49-981-20862474</span> (sipgate)</span><br />
   <span class="tel"><span class="type">mobile</span>: <span class="value">+49-179-1025659</span> (telekom)</span>
 </p>
 <p>
