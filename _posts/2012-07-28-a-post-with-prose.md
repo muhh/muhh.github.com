@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 published: true
 title: a post with prose
 tags: [jekyll, prose.io, drupal, github]
