@@ -1,6 +1,6 @@
 markdown: rdiscount
 lsi: false
-permalink: /:year/:month/:day/:title
+permalink: /:year/:month/:day/:category/:title
 exclude: newsroom
 url: http://byzero.de
 meta:
