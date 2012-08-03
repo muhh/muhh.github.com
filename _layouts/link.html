@@ -2,7 +2,7 @@
 layout: base
 ---
 <article class="link">
-  <h2 class="title"><a href="{{ post.linkurl }}">{{ page.title }}</a></h2>
+  <h2 class="title">→ <a href="{{ post.linkurl }}">{{ page.title }}</a></h2>
   linked on <time title="{{ page.date | date_to_xmlschema }}" pubdate="{{ page.date | date_to_xmlschema }}">{{ page.date | date_to_long_string }}.</time>
   {{ content }}
   <ul class="tags">
