@@ -10,6 +10,9 @@ layout: base
     <li><a href="{{ site.baseurl }}/tag/{{tag | replace:' ', '-' | downcase }}">{{ tag }}</a>{% if forloop.last == false %}, {%endif %}</li>
     {% endfor %}
   </ul>
+
+  <a href="{{ post.url }}" title="Permalink to {{ page.title }} on {{ page.title }}">#</a>
+
 </article>
 
 <nav class="page-navigation">

@@ -2,7 +2,7 @@
 layout: link
 title: streetmemes
 created: 1101400407
-url: http://www.streetmemes.com/
+linkurl: http://www.streetmemes.com/
 ---
 via [jimmiz journal - Business Yo!][]
 

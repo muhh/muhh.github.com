@@ -2,7 +2,7 @@
 layout: link
 title: Atari History Museum
 created: 1094569301
-url: http://www.atarimuseum.com/
+linkurl: http://www.atarimuseum.com/
 ---
 via [Forever Geek][]
 

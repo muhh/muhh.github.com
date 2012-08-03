@@ -2,7 +2,7 @@
 layout: link
 title: Visitors - fast web log analyzer
 created: 1094218947
-url: http://www.hping.org/visitors/
+linkurl: http://www.hping.org/visitors/
 ---
 gesehn beim [wwworker][]
 

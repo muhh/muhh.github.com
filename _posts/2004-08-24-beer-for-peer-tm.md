@@ -2,7 +2,7 @@
 layout: link
 title: Beer for Peer (tm;-)
 created: 1093305477
-url: http://www.beerforpeer.de/
+linkurl: http://www.beerforpeer.de/
 ---
 via [dem anderen junkie][]
 

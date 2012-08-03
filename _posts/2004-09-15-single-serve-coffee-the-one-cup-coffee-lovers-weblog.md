@@ -2,7 +2,7 @@
 layout: link
 title: Single Serve Coffee - The One Cup Coffee Lovers Weblog
 created: 1095204757
-url: http://www.singleservecoffee.com/
+linkurl: http://www.singleservecoffee.com/
 ---
 und noch ein Kaffee Blog - via [lumma][]
 
