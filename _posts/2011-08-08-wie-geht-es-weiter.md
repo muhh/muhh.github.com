@@ -1,12 +1,8 @@
 ---
-layout: post 
+layout: post
 title: Wie geht´s weiter
-permalink: 
-published: true
-categories: []
-tags: []
 ---
-Nachdem das hier ja alles sehr, sehr statisch ist, gibt es keine Kommentare.  
+Nachdem das hier ja alles sehr, sehr statisch ist, gibt es keine Kommentare.
 Ich weiß noch nicht, ob ich wirklich Kommentare brauche oder will. Wird sich zeigen.
 
 Was ich schon jetzt merke: das Schreiben fällt mir einfacher, wenn es nicht in einem Webinterface, sondern in der gewohnten Umgebung, einem guten Texteditor, stattfindet. Markdown nimmt mir da sowieso sehr viel ab.

@@ -2,7 +2,11 @@
 layout: post
 published: true
 title: a post with prose
-tags: [jekyll, prose.io, drupal, github]
+tags:
+  - jekyll
+  - prose.io
+  - Drupal
+  - Github
 ---
 
 letzte Nacht bin ich über einen äußerst interessanten Artikel von [Development Seed](http://developmentseed.org), ein ehemaliger Drupalshop, gestolpert, in dem sie ausführlich beschreiben, [wie sie fast keine CMS mehr nutzen](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/).

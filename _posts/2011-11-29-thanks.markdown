@@ -1,13 +1,13 @@
 ---
-layout: post 
+layout: post
 title: Thanks
-permalink: 
 published: true
-categories: []
-tags: [jekyll, design]
+tags:
+  - jekyll
+  - Design
 ---
 
 Thanks to [Leslie Michael Orchard](http://decafbad.com/blog/) for the inspiration to do the todays
-changes to the sites design and structure.  
+changes to the sites design and structure.
 
-It´s HTML5 now :)s
+It´s HTML5 now :)
