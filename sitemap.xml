@@ -1,8 +1,22 @@
 ---
 layout: nil
+site_pages:
+  - /
+  - /markus/
+  - /archive/
+  - /tag/
+  - /blog/
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1" xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
+  {% for site_page in page.site_pages %}
+  <url>
+    <loc>{{ site.url }}{{ site_page }}</loc>
+    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  {% endfor %}
+
   {% for post in site.posts %}
     {% unless post.hide %}
       <url>
