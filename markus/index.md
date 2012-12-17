@@ -11,13 +11,13 @@ categories:
 <img src="http://www.gravatar.com/avatar/f3a754cead3d10f1dba87e5fb3412e1d.png" alt="Markus Heurung Photo" class="photo" style="float: right;" />
 
 <p><address class="adr">
-  <span class="street-address">Veitshöchheimerstr. 14</span><br />
-  <span class="postal-code">97080</span> <span class="locality">Würzburg</span><br />
+  <span class="street-address">Westheimerstr. 47</span><br />
+  <span class="postal-code">97762</span> <span class="locality">Hammelburg</span><br />
   <span class="country-name">Germany</span>
 </address>
 </p>
 <p>
-  <span class="tel"><span class="type">fon</span>: <span class="value">+49-981-20862474</span> (sipgate)</span><br />
+  <span class="tel"><span class="type">fon</span>: <span class="value">+49 9732 8898948</span> (sipgate)</span><br />
   <span class="tel"><span class="type">mobile</span>: <span class="value">+49-179-1025659</span> (telekom)</span>
 </p>
 <p>
@@ -26,15 +26,12 @@ categories:
   <a href="https://plus.google.com/100432708315665332485" class="url symbol" rel="me" title="Markus Heurung at Google+">g</a>
   <a href="http://facebook.com/markusheurung" class="url symbol" rel="me" title="Markus Heurung at facebook">f</a>
   <a href="skype:markus.heurung" class="url symbol">s</a>
-  <a href="http://identi.ca/muhh" class="url symbol" rel="me" title="Markus Heurung at identi.ca">,</a>
   <a href="http://blogulus.de" class="url symbol" rel="me" "my (abandonded) blog about microblogging">v</a>
-  <a href="https://xing.com/profile/Markus_Heurung" class="url symbol" rel="me" title="Markus Heurung at Xing">,</a>
   <a href="http://de.linkedin.com/in/markusheurung" class="url symbol" rel="me" title="Markus Heurung at LinkedIn">l</a>
   <a href="http://github.com/muhh" class="url symbol" rel="me" title="Markus Heurung at github">,</a>
 </p>
 <p>
 email: <a href="mailto:kontakt@markusheurung.de" class="email">kontakt@markusheurung.de</a><br />
-jabber: <a href="xmpp:markus.heurung@gmail.com" class="url">markus.heurung@gmail.com</a>
 </p>
 <p>
 <a href="/files/MarkusHeurung_0xFD4F13C9_pub.asc">PGP/GPG-Schlüssel herunterladen</a><br />
