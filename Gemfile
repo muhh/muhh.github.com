@@ -15,3 +15,5 @@ gem 'classifier'
 gem 'coderay'
 gem 'builder'
 gem 'nanoc-git' # for directly deploying to git
+gem 'jekyll'
+gem 'rdiscount'
