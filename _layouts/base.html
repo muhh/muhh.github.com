@@ -2,17 +2,17 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="stylesheet" href="{{ site.baseurl }}/css/screen.css" type="text/css" media="screen" charset="utf-8">
-    <link rel="alternate" type="application/rss+xml" href="{{ site.baseurl }}/rss.xml" title="RSS Feed" />
-    <link rel="alternate" type="application/atom+xml" href="{{ site.baseurl }}/atom.xml" title="Atom Feed" />
+    <link rel="stylesheet" href="{{ site.meta.absolute_baseurl }}/css/syntax.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="{{ site.meta.absolute_baseurl }}/css/screen.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="alternate" type="application/rss+xml" href="{{ site.meta.absolute_baseurl }}/rss.xml" title="RSS Feed" />
+    <link rel="alternate" type="application/atom+xml" href="{{ site.meta.absolute_baseurl }}/atom.xml" title="Atom Feed" />
     <title>byzero.de - {{ page.title }}</title>
     <script type="text/javascript" src="/js/jquery.js"></script>
   </head>
   <body>
     <section class="site">
       <header>
-        <h1><a href="{{ site.baseurl }}/">{{ site.meta.site_title }}</a></h1><br />
+        <h1><a href="{{ site.meta.absolute_baseurl }}/">{{ site.meta.site_title }}</a></h1><br />
         <h2>{{ site.meta.site_subtitle }}</h2>
         <nav>
         </nav>
