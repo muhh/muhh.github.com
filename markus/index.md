@@ -1,10 +1,9 @@
 ---
 layout: page
 title: "Markus Heurung"
-subtitle: "a Drupal guy"
 date: 2011-11 13:37
 comments: false
-categories: 
+categories:
 ---
 
 <article class="vcard">
